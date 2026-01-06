@@ -1,0 +1,11 @@
+# Airflow runtime folders (DO NOT COMMIT)
+logs/
+output/
+
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# OS / editor
+.env
+*.log
