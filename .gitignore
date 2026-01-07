@@ -1,29 +1,17 @@
-# ==============================
-# Airflow runtime artifacts
-# ==============================
-logs/
-output/
+# Ignore everything inside logs and output
+logs/*
+output/*
 
-# ==============================
-# Python cache & test artifacts
-# ==============================
+# But keep placeholder files
+!logs/.gitkeep
+!output/.gitkeep
+
+# Python cache
 __pycache__/
 .pytest_cache/
 *.pyc
 
-# ==============================
-# Environment / secrets
-# ==============================
+# Env & OS files
 .env
-
-# ==============================
-# OS & editor files
-# ==============================
 .DS_Store
 Thumbs.db
-*.log
-
-# ==============================
-# Docker volumes (local only)
-# ==============================
-postgres_data/
