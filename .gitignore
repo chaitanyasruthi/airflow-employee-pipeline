@@ -1,4 +1,29 @@
-logs/*
-output/*
-!logs/.gitkeep
-!output/.gitkeep
+# ==============================
+# Airflow runtime artifacts
+# ==============================
+logs/
+output/
+
+# ==============================
+# Python cache & test artifacts
+# ==============================
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# ==============================
+# Environment / secrets
+# ==============================
+.env
+
+# ==============================
+# OS & editor files
+# ==============================
+.DS_Store
+Thumbs.db
+*.log
+
+# ==============================
+# Docker volumes (local only)
+# ==============================
+postgres_data/
