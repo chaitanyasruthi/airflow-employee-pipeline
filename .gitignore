@@ -1,6 +1,4 @@
-
-__pycache__/
-.pytest_cache/
-
-.env
-*.log
+logs/*
+output/*
+!logs/.gitkeep
+!output/.gitkeep
