@@ -1,17 +1,13 @@
-# Ignore everything inside logs and output
-logs/*
-output/*
+# Ignore airflow logs
+logs/
 
-# But keep placeholder files
-!logs/.gitkeep
-!output/.gitkeep
+# Ignore output EXCEPT parquet files
+output/*
+!output/*.parquet
 
 # Python cache
 __pycache__/
 .pytest_cache/
 *.pyc
 
-# Env & OS files
 .env
-.DS_Store
-Thumbs.db
